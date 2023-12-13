@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-git",
+  "version": "1.0.0",
+  "description": "Aplicacion web sencilla de una lista de tareas. Se utiliza JavaScript como lenguaje principal y MariaDB como base de datos.",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesus24dev/To-Do-Page.git"
+  },
+  "keywords": [
+    "class",
+    "connection",
+    "start"
+  ],
+  "author": "Jesus Sirit, Carmelo Valdez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jesus24dev/To-Do-Page/issues"
+  },
+  "homepage": "https://github.com/Jesus24dev/To-Do-Page#readme"
+}
