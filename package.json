@@ -4,7 +4,7 @@
   "description": "Aplicacion web sencilla de una lista de tareas. Se utiliza JavaScript como lenguaje principal y MariaDB como base de datos.",
   "main": "server.js",
   "scripts": {
-    "test": "start"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
