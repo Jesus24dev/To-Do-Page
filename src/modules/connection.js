@@ -33,14 +33,11 @@ class DataBase {
 
     //Agregar a la base de datos
     insertQuery(table, fields, data) {
-        this.newConnection().query( `INSERT INTO ${table} (${fields}) VALUES ?`, [data], (error) => {
-            if (error) {
-                console.log(error)
-            } else {
-                console.log('datos guardados')
-            }
-    });
 
+        const query = `INSERT INTO ${table} (${fields.join(', ')}) VALUES ?`;
+        this.newConnection().query(query, [data], (error) => {
+            error ? console.log(error) : console.log('Datos guardados');
+        });
       }
 
     //Cargar datos de la base de datos
@@ -76,10 +73,10 @@ class DataBase {
 }
 
 module.exports = DataBase
+/*
+const db = new DataBase ('localhost', 'root', '', 'todopage')
 
-
-
-
-
+db.insertQuery('aux', ['nombre','edad'], [['alejandro', 123]])
+*/
 
 
